@@ -19,7 +19,7 @@ class DataSearch extends Data
     {
         return [
             [['id', 'status_id'], 'integer'],
-            [['license plate', 'date_time'], 'safe'],
+            [['license_plate', 'date_time'], 'safe'],
         ];
     }
 
@@ -64,7 +64,7 @@ class DataSearch extends Data
             'status_id' => $this->status_id,
         ]);
 
-        $query->andFilterWhere(['like', 'license plate', $this->license plate]);
+        $query->andFilterWhere(['like', 'license_plate', $this->license_plate]);
 
         return $dataProvider;
     }
