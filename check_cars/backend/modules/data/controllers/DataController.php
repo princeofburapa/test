@@ -47,13 +47,12 @@ class DataController extends Controller
     /**
      * Displays a single Data model.
      * @param integer $id
-     * @param integer $status_id
      * @return mixed
      */
-    public function actionView($id, $status_id)
+    public function actionView($id)
     {
         return $this->render('view', [
-            'model' => $this->findModel($id, $status_id),
+            'model' => $this->findModel($id),
         ]);
     }
 
@@ -67,7 +66,7 @@ class DataController extends Controller
         $model = new Data();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id, 'status_id' => $model->status_id]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -79,15 +78,14 @@ class DataController extends Controller
      * Updates an existing Data model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param integer $id
-     * @param integer $status_id
      * @return mixed
      */
-    public function actionUpdate($id, $status_id)
+    public function actionUpdate($id)
     {
-        $model = $this->findModel($id, $status_id);
+        $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id, 'status_id' => $model->status_id]);
+            return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('update', [
                 'model' => $model,
@@ -99,12 +97,11 @@ class DataController extends Controller
      * Deletes an existing Data model.
      * If deletion is successful, the browser will be redirected to the 'index' page.
      * @param integer $id
-     * @param integer $status_id
      * @return mixed
      */
-    public function actionDelete($id, $status_id)
+    public function actionDelete($id)
     {
-        $this->findModel($id, $status_id)->delete();
+        $this->findModel($id)->delete();
 
         return $this->redirect(['index']);
     }
@@ -113,13 +110,12 @@ class DataController extends Controller
      * Finds the Data model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
-     * @param integer $status_id
      * @return Data the loaded model
      * @throws NotFoundHttpException if the model cannot be found
      */
-    protected function findModel($id, $status_id)
+    protected function findModel($id)
     {
-        if (($model = Data::findOne(['id' => $id, 'status_id' => $status_id])) !== null) {
+        if (($model = Data::findOne($id)) !== null) {
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

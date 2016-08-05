@@ -17,7 +17,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'license plate') ?>
+    <?= $form->field($model, 'license_plate') ?>
 
     <?= $form->field($model, 'date_time') ?>
 
