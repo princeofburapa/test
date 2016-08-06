@@ -110,12 +110,20 @@ class OutController extends Controller
      * Finds the Out model based on its primary key value.
      * If the model is not found, a 404 HTTP exception will be thrown.
      * @param integer $id
+<<<<<<< HEAD:check_cars/backend/modules/out/controllers/OutController.php
      * @return Out the loaded model
+=======
+     * @return Data the loaded model
+>>>>>>> ebd5be19441c3573c1956f4c3eb06e2a92c406a7:check_cars/backend/modules/data/controllers/DataController.php
      * @throws NotFoundHttpException if the model cannot be found
      */
     protected function findModel($id)
     {
+<<<<<<< HEAD:check_cars/backend/modules/out/controllers/OutController.php
         if (($model = Out::findOne($id)) !== null) {
+=======
+        if (($model = Data::findOne($id)) !== null) {
+>>>>>>> ebd5be19441c3573c1956f4c3eb06e2a92c406a7:check_cars/backend/modules/data/controllers/DataController.php
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');

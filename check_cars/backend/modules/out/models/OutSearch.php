@@ -18,8 +18,13 @@ class OutSearch extends Out
     public function rules()
     {
         return [
+<<<<<<< HEAD:check_cars/backend/modules/out/models/OutSearch.php
             [['id'], 'integer'],
             [['license_plate', 'data_time'], 'safe'],
+=======
+            [['id', 'status_id'], 'integer'],
+            [['license_plate', 'date_time'], 'safe'],
+>>>>>>> ebd5be19441c3573c1956f4c3eb06e2a92c406a7:check_cars/backend/modules/data/models/DataSearch.php
         ];
     }
 
