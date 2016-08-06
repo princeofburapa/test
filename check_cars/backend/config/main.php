@@ -13,12 +13,12 @@ return [
     'bootstrap' => ['log'],
     'modules' => [
 
-      'data' => [
-            'class' => 'backend\modules\data\Module',
+      'in' => [
+            'class' => 'backend\modules\in\Module',
         ],
-        'status' => [
-           'class' => 'backend\modules\status\Module',
-       ],
+        'out' => [
+            'class' => 'backend\modules\out\Module',
+        ],
     ],
     'components' => [
         'request' => [

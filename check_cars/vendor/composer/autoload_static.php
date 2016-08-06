@@ -23,6 +23,7 @@ class ComposerStaticInitaf4cdf71a1c7405a5577959534842c03
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
+<<<<<<< HEAD
         'k' => 
         array (
             'kartik\\widgets\\' => 15,
@@ -47,6 +48,12 @@ class ComposerStaticInitaf4cdf71a1c7405a5577959534842c03
             'kartik\\base\\' => 12,
             'kartik\\alert\\' => 13,
             'kartik\\affix\\' => 13,
+=======
+        'd' => 
+        array (
+            'dosamigos\\editable\\' => 19,
+            'dosamigos\\datetimepicker\\' => 25,
+>>>>>>> b395dcd538f030d907fd6a56bfc86e733f028746
         ),
         'c' => 
         array (
@@ -91,6 +98,7 @@ class ComposerStaticInitaf4cdf71a1c7405a5577959534842c03
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
+<<<<<<< HEAD
         'kartik\\widgets\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widgets',
@@ -178,6 +186,15 @@ class ComposerStaticInitaf4cdf71a1c7405a5577959534842c03
         'kartik\\affix\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-affix',
+=======
+        'dosamigos\\editable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2amigos/yii2-editable-widget',
+        ),
+        'dosamigos\\datetimepicker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2amigos/yii2-date-time-picker-widget/src',
+>>>>>>> b395dcd538f030d907fd6a56bfc86e733f028746
         ),
         'cebe\\markdown\\' => 
         array (
