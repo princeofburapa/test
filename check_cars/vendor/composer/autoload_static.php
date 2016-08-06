@@ -23,6 +23,11 @@ class ComposerStaticInitaf4cdf71a1c7405a5577959534842c03
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
         ),
+        'd' => 
+        array (
+            'dosamigos\\editable\\' => 19,
+            'dosamigos\\datetimepicker\\' => 25,
+        ),
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
@@ -65,6 +70,14 @@ class ComposerStaticInitaf4cdf71a1c7405a5577959534842c03
         'yii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
+        ),
+        'dosamigos\\editable\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2amigos/yii2-editable-widget',
+        ),
+        'dosamigos\\datetimepicker\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2amigos/yii2-date-time-picker-widget/src',
         ),
         'cebe\\markdown\\' => 
         array (
